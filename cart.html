@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+    <style>
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .product-image {
+            width: 100px; /* Adjust the size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .remove-button {
+            background-color: #f44336;
+            color: white;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .remove-button:hover {
+            background-color: #d32f2f;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            margin-top: 200px;
+            width: 600px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+
+        <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="index.html"><img src="Groffers.png" width="250"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+
+    <form action="/submit_cart" method="post">
+        <!-- Your cart-related content goes here -->
+        <h2>Shopping Cart</h2>
+
+        <div class="product-item">
+            <img src="images/mango.jpg" alt="Product A" class="product-image">
+            <button class="remove-button" type="button" onclick="removeProduct(this)">Remove</button>
+        </div>
+        <div class="product-item">
+            <img src="images/spinach.jpg" alt="Product B" class="product-image">
+            <button class="remove-button" type="button" onclick="removeProduct(this)">Remove</button>
+        </div>
+        <div class="product-item">
+            <img src="images/kachi.png" alt="Product A" class="product-image">
+            <button class="remove-button" type="button" onclick="removeProduct(this)">Remove</button>
+        </div>
+        <div class="product-item">
+            <img src="images/basrice.png" alt="Product B" class="product-image">
+            <button class="remove-button" type="button" onclick="removeProduct(this)">Remove</button>
+        </div>
+        
+            <button class="cart-button" onclick="gotopay(url)">Proceed to payment</button>
+     
+    </form>
+
+    
+
+    <script>
+        // JavaScript function to remove a product item
+        function gotopay(url) {
+            window.location.href = 'payment.html';
+        }
+        function removeProduct(button) {
+            var productItem = button.parentNode;
+            productItem.parentNode.removeChild(productItem);
+        }
+    </script>
+
+</body>
+</html>

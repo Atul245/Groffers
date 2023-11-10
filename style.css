@@ -1,0 +1,384 @@
+/*------------------------------------------------NAVBAR----------------------------------------*/
+.nav
+{
+    background-color: white;
+    z-index: 9;
+    padding-left: 70px;
+    padding-right: 50px;
+    display:flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_top
+{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+.logo
+{
+    float:left;
+    width: 20%;
+}
+.search-bar {
+    margin-top: 40px;
+    margin-left: auto;
+}
+
+input[type="text"] {
+    width: 500px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.nav_side
+{
+    float:right;
+    width:45%;
+    margin-top: 40px;
+}
+.nav_side a
+{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left:22px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+    color: rgb(37, 0, 19);
+    font-weight: bold;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.nav_side a:hover
+{
+    color: rgb(253, 0, 84);
+    transition: all 1s ease;
+}
+
+/* Footer styling */
+footer {
+    background-color: white; /* Change background color to white */
+    color: black; /* Change font color to black */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 50px;
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    color: black; /* Change font color to black */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: black; /* Change font color to black */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #03411b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*--------------------------------------------ABOUT US---------------------------------------*/
+.about_us
+{
+    padding:100px;
+}
+.about_us h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 33px;
+    text-align: center;
+}
+.about_us h5
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 15px;
+    text-align: center;
+}
+.about_us p
+{
+    text-align: center;
+    padding:15px;
+    font-size: 15px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    line-height: 25px;
+}
+/*--------------------------------------------CONTACT---------------------------------------*/
+.contact_container
+{
+    padding: 100px;;
+}
+.contact_container h2
+{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 33px;
+    text-align: center;
+}
+.contact_container .g_map
+{
+    border:10px solid rgb(16, 73, 9);
+}
+.contact_container .contact_content
+{
+    padding:20px;
+}
+.contact_container .contact_content p
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    line-height: 25px;
+}
+/*-------------------------login----------------------*/
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .login-container {
+    width: 30%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+} 
+.login-container h2 {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 10px;
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    font-size: 18px;
+    color: rgb(16, 73, 9);
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    font-size: 18px;
+}
+
+.login-container input[type="submit"] {
+    background-color: rgb(16, 73, 9);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: rgb(16, 73, 9);
+}
+
+main {
+    margin-top: 100px;
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+    border-radius: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container section {
+    width: 22%;
+}
+
+.image-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-button {
+    background-color: rgb(16, 73, 9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #8a275a;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-button {
+    background-color: #ff0000; 
+}
+
+/*--------------------------------------------ABOUT US SECTION---------------------------------------*/
+.about-section {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.about-image {
+    width: 50%;
+    text-align: right;
+}
+
+.about-section h2 {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------REVIEWS SECTION---------------------------------------*/
+.reviews-section {
+    padding: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Adjust margin for spacing between rows */
+}
+
+.review {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+}
+
+.review h3 {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 22px;
+}
+
+.review p {
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: rgb(16, 73, 9);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    line-height: 25px;
+}
+
+
+
